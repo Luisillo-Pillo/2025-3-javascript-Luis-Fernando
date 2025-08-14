@@ -25,3 +25,12 @@ main {
 }
 
 /* Estiliza la imagen, el nombre y la bio */
+
+img{
+  height: 400px;
+  border-radius: 16px;
+}
+
+#Texto{
+  line-height: 0.5;
+}
