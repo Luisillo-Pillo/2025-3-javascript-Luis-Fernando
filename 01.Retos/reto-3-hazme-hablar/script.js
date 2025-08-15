@@ -5,3 +5,10 @@
 // Paso 2: Agrega un event listener para escuchar el clic
 
 // Paso 3: Cuando se haga clic, muestra un alert que diga: "¡Bien hecho!"
+const { ask } = require('../helpers/input.js');
+
+async function main() {
+getElement
+}
+
+main();
