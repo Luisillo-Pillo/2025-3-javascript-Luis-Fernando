@@ -8,7 +8,10 @@
 const { ask } = require('../helpers/input.js');
 
 async function main() {
-
+    const newButton = document.getElementById('btn-hablar');
+    newButton.addEventListener('click', function() {
+    alert('¡Bien hecho!');
+    });
 }
 
 main();
