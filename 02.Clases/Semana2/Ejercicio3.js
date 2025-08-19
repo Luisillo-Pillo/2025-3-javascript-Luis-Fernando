@@ -31,7 +31,6 @@ async function main() {
             }
         } else if (opcion ==='3') {
             console.log('Gracias');
-            console.log('Hemos terminado');
         } else {
             console.log('Opción inválida');
         }
