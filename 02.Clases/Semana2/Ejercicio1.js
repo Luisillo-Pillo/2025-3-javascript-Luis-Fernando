@@ -6,11 +6,15 @@ async function saludar (nombre) {
 
 async function main () {
     const personas = [
-        "Luis",
         "Andrea",
-        "Yare",
         "Dani",
-    ]
+        "Luis",
+        "Yare",
+    ];
+
+    for(let i = 0; 1 < personas.length;i++){
+        saludar(personas[i]);
+    }
 }
 
 main ();
