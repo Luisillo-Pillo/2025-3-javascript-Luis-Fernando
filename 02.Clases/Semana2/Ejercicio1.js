@@ -7,7 +7,7 @@ async function saludar (nombre) {
 async function main () {
     const personas = ["Andrea", "Dani", "Luis", "Yare",];
     console.log('------------------------Ascendente------------------------');
-    for (let i = 0; 1 < personas.length;i++) {
+    for (let i = 0; i < personas.length;i++) {
         saludar(personas[i]);
     }
     console.log('------------------------Descendente------------------------');
