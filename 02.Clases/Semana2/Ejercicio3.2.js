@@ -6,5 +6,9 @@ async function main() {
 
     while(option !== '3') {
         option = await ask(`¿Qué deseas hacer? \n1.- Agregar una fruta. \n2.- Eliminar una fruta. \n3.- Frutas disponibles. \n4.- Salir`)
+
+        if(opcion === '1') {
+            let frutaNueva = await ask('¿Que fruta deseas agregar?')
+        }
     }
 }
