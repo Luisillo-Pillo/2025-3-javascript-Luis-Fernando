@@ -10,7 +10,16 @@ function obtenerPromedio(numeros){
     return promedio;
 }
 
-function numeroMayor()
+function obtenerMayor(numeros) {
+    let mayor = numeros [0];
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros [i] > mayor) {
+            mayor = numeros [i];
+        }
+    }
+    return mayor
+}
+
 
 async function main() {
     const edades = [20, 18, 25, 30, 22];
