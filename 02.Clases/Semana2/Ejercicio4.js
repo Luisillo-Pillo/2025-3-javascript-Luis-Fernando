@@ -20,6 +20,15 @@ function obtenerMayor(numeros) {
     return mayor
 }
 
+function obtenerMenor(numeros) {
+    let menor = numeros [0];
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros [i] < menor) {
+            menor = numeros [i];
+        }
+    }
+    return menor
+}
 
 async function main() {
     const edades = [20, 18, 25, 30, 22];
@@ -27,8 +36,9 @@ async function main() {
     const datos = [70, 80, 90, 100, 85]
     const nombre = ['Ana', 'Esteban', 'Luis', 'Oscar', 'María'];
 
-    console.log(`Promedio de edades = ${obtenerPromedio(edades)}`)
-
+    console.log(`Promedio de edades = ${obtenerPromedio(edades)}`);
+    console.log(`El numero mayor de: ${lista} = ${obtenerMayor(lista)}`);
+    console.log(`El numero menor de: ${lista} = ${obtenerMenor(lista)}`);
 }
 
 main ();
