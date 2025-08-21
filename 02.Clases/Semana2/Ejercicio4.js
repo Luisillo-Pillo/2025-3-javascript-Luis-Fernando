@@ -30,6 +30,15 @@ function obtenerMenor(numeros) {
     return menor;
 }
 
+function resumenEstadistico(numeros) {
+    const promedio = obtenerPromedio(numeros);
+    const mayor = obtenerMayor(numeros);
+    const menor = obtenerMenor(numeros);
+
+    return {'promedio':promedio,'mayor':mayor,'menor':menor};
+    return {promedio, mayor, menor};
+}
+
 async function main() {
     const edades = [20, 18, 25, 30, 22];
     const lista = [5, 20, 8, 99, 3]
