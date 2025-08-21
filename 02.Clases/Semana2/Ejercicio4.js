@@ -17,7 +17,7 @@ function obtenerMayor(numeros) {
             mayor = numeros [i];
         }
     }
-    return mayor
+    return mayor;
 }
 
 function obtenerMenor(numeros) {
@@ -27,7 +27,7 @@ function obtenerMenor(numeros) {
             menor = numeros [i];
         }
     }
-    return menor
+    return menor;
 }
 
 async function main() {
