@@ -34,8 +34,6 @@ function resumenEstadistico(numeros) {
     const promedio = obtenerPromedio(numeros);
     const mayor = obtenerMayor(numeros);
     const menor = obtenerMenor(numeros);
-
-    return {'promedio':promedio,'mayor':mayor,'menor':menor};
     return {promedio, mayor, menor};
 }
 
