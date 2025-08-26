@@ -7,7 +7,7 @@ function addTask() {
     if ( taskText !== '') {
         const li = document.createElement('li');// <li></li>
         li.innerHTML = `
-        <span onClick = 'roggleComplete(this)'>${taskText}</span>
+        <span onClick = 'toggleComplete(this)'>${taskText}</span>
         <div class='task-buttons'>
             <button onClick='deleteTask(this)'>Delete</button>
         </div>
@@ -21,6 +21,6 @@ function deleteTask(btn) {
     btn.closest('li').remove();
 }
 
-function toggleComplete(span){
+function toggleComplete(span) {
     span.classList.toggle('task-complete');
 }
