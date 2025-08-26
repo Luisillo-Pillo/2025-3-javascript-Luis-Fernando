@@ -1,19 +1,29 @@
 const { ask } = require('./helpers/input');
 
+function obtenerPromedio (numeros) {
+    let total = 0;
+    for (let i = 0; i < numeros; i++){
+        total = total + numeros[i];
+    }
+    return (total/numeros.length);
+}
+
 function obtenerAprobados(numeros){
     let aprobados = 0;
+    let reprobados = 0;
     for (let i = 0; i < numeros.length; i++){
         if (numeros [i] >=70){
             aprobados++;
+        } else {
+            reprobados++;
         }
     }
-    return aprobados
+    return {aprobados, reprobados}
 }
 
-function analizarCalificaciones(numeros){
-    const aprobados = obtenerAprobados (numeros);
-    const reprobados = 0;
-    const promedio = 0;
+function analizarCalificaciones(numeros) {
+    const { aprobados, reprobados } = obtenerAprobados (numeros);
+    const promedio = obtenerPromedio(numeros);
     const califAlta = 0;
     const califBaja = 0;
 
