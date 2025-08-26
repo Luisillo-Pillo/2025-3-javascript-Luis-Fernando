@@ -1,0 +1,31 @@
+Objetivo de la clase
+    - Comprender qué es un objeto en JavaScript
+    - Conocer su sintaxis
+    - Aprender a crear y acceder a propiedades
+{object}
+
+
+Metodos en objetos
+Aprender a:
+    - Agregar funciones como métodos dentro de un objeto.
+    - Usar "this" para acceder a las propiedades del objeto
+
+Carro
+    Atributos
+        - Color
+        - Marca
+        - Modelo
+    Métodos
+        - Arrancar
+        - Acelerar
+        - Detenerse
+
+Persona
+    Atributos
+        - Nombre
+        - Edad
+        - Trabajo
+    Métodos
+        - Caminar
+        - Comer
+        - Trabajar
