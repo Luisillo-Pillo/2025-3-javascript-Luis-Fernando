@@ -16,6 +16,10 @@ body{
 .container{
     background-color: #fff;
     padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30 rgba(0, 0, 0, 0.1);
 }
 
 .task-complete{
