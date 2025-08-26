@@ -23,11 +23,12 @@ function obtenerAprobados(numeros){
 
 function analizarCalificaciones(numeros) {
     const { aprobados, reprobados } = obtenerAprobados (numeros);
-    const promedio = obtenerPromedio(numeros);
-    const califAlta = 0;
+    const promedio = Math.florr(obtenerPromedio(numeros));
+    const califAlta = Math.max(...numeros);
     const califBaja = 0;
 
-    return {aprobados,
+    return {
+        aprobados,
         reprobados,
         promedio,
         califAlta,
