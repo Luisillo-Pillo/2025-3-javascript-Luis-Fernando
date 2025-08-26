@@ -2,7 +2,14 @@
 
 function addTask() {
     const input = document.getElementById('taskInput');
-    debugger
-    const taskText = input.ariaValueMax.trim();
-    console.log(taskText);
+    const taskText = input.value.trim();
+
+    if ( taskText !== '') {
+        const li = document.createElement('li');// <li></li>
+        li.innerHTML = `
+        <span>${taskText}</span>
+        `;
+        document.getElementById('taskList').appendChild(li);
+        input.value = '';
+    }
 }
