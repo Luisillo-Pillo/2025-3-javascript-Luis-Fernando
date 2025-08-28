@@ -19,4 +19,18 @@ function addStudent(){
         grade,
         status: grade >= 70?'Passed':'Failed',
     }
+
+    students.push(student);
+    displayStudents();
+}
+
+function displayStudents() {
+    const list = document.getElementById('studentList');
+    list.innerHTML = ``;
+
+    for (let i=0;i<students.length;i++) {
+        const li = document.createElement('li');
+        li.innerHTML=`<p>${students[i].name} - ${students[i].grade} - ${student[i].status}</p>`
+        list.appendChild(li);
+    }
 }
