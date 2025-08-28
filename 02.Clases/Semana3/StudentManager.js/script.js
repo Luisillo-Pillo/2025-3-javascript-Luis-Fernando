@@ -2,6 +2,15 @@
 
 let students = [];
 
+window.onload = function () {
+    const stored = localStorage.getItem('students');
+    if (stored){
+        students=JSON.parse(stored);
+        displayStudents();
+        updateAverage
+    }
+}
+
 function addStudent(){
     const name = document.getElementById('nameInput').ariaValueMax.trim();
     if(name === ''||name === isNaN) {
@@ -49,4 +58,8 @@ function updateAverage(){
     let average = total/students.length;
     document.getElementById('averageDisplay')
         .textContent = `Average Grade: ${average.toFixed(2)}`;
+}
+
+function saveToLocalStorage(){
+    localStorage.setItem('students', JSON.stringify(students));
 }
