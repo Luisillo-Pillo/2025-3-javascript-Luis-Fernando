@@ -30,4 +30,36 @@ h1, h2{
 
 .input-group input{
     flex: 1;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: solid #ccc 1px;
+}
+
+.input-group button{
+    padding: 0.6rem 1rem;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+ul#studentList{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#studentList li{
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    background: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.passed{
+    color: #27ae60;
+    font-weight: ;
 }
