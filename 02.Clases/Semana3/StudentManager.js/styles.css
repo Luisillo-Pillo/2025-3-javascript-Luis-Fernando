@@ -61,5 +61,10 @@ ul#studentList li{
 
 .passed{
     color: #27ae60;
-    font-weight: ;
+    font-weight: bold;
+}
+
+.failed{
+    color: #e74c3c;
+    font-weight: bold;
 }
