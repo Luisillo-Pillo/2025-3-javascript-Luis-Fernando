@@ -22,6 +22,9 @@ function addStudent(){
 
     students.push(student);
     displayStudents();
+    updateAverage();
+    document.getElementById('nameInput').value = '';
+    document.getElementById('gradeInput').value = '';
 }
 
 function displayStudents() {
@@ -30,7 +33,20 @@ function displayStudents() {
 
     for (let i=0;i<students.length;i++) {
         const li = document.createElement('li');
-        li.innerHTML=`<p>${students[i].name} - ${students[i].grade} - ${student[i].status}</p>`
+        li.innerHTML=`<p>${students[i].name} - ${students[i].grade} - ${student[i].status}</p>`;
         list.appendChild(li);
     }
+}
+
+function updateAverage(){
+    if(students.length===0){
+        return;
+    }
+    let total = 0;
+    for (let i = 0; i < students.length; i++) {
+        total = total + students[i].grade;
+    }
+    let average = total/students.length;
+    document.getElementById('averageDisplay')
+        .textContent = `Average Grade: ${average.toFixed(2)}`;
 }
